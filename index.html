@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO natural -->
+    <meta name="author" content="Axel Yataco">
+    <meta name="copyright" content="&copy: Axel Yataco 2020. Todos los derechos reservados">
+    <meta name="email" content="follow@hotmail.com">
+    <meta name="desciption" content="Creacion de un proyecto con SASS">
+    <meta name="keywords" content="foto, fotografia, camara, proyecto sass, eventos, practicar sass, codigo sass">
+
+    <!--Social Cards og es Facebook y Twitter-->
+    <meta property="ogurl" content="https/www.hola.com">
+    <meta property="ogtype" content="website">
+    <meta property="ogtitle" content="Practicando SASS">
+    <meta name="ogdescription" content="Creacion de un proyecto con SASS">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Favicon-->   <!--?v=2 lo que hace es recargar(forzar) la imagen, ya que sin eso no se mostraba en la pagina-->
+    <link rel="shortcut icon" href="favicon/favicon.ico?v=2" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico?v=2" type="image/x-icon">
+
+
+    <!--Slider Slippry-->
+    <link rel="stylesheet" href="css/slippry.css">
+     
+    <title>BlackParadox</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <!--Menu principal-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--Menu parte izquierda-->
+                <!--Bootstrap trabaja con pantalla dividida en 12 columnas, al logo le asignamos 2-->
+                <div class="col-xl-2" class="menu-izquierda">
+                    <a href="/" class="logo"><img src="img/logo.svg" alt="logo principal"></a>
+                </div>
+                <!--Menu parte derecha-->
+                <div class="col-xl-10">
+                    <ul class="menu-derecha">
+                        <li class="link-activate"><a href="index.html">INICIO</a></li>
+                        <li><a href="index.html#nosotros">NOSOTROS</a></li>
+                        <li><a href="portafolio.html"> PORTAFOLIO</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="slider">
+        <ul id="slip">
+           <li>
+               <h3 class="left top_250 white_bg">Tus momentos más especiales</h3>
+                <p class="left top_300 white_bg">Lo esencial en las cascadas es ser rápido en las más largas, mantenerse entero en las más duras y poder continuar el máximo tiempo posible. <br> [Godefroy Perroux]</p>
+               <button class="left top_400 black">Escribenos</button>
+                <img src="img/slide_01.jpg" alt="Slide de Slippry 1"></li>
+            <li>
+                <h3 class="right top_250 white_bg" >Tus momentos más especiales</h3>
+                <p class="right top_300 white_bg">El alpinista es quién conduce su cuerpo allá dónde un día sus ojos lo soñaron. <br> [Gaston Rébuffat]</p>
+                <button class="right top_375 black">Escribenos</button>
+                <img src="img/slide_02.jpg" alt="Slide de Slippry 2"></li>
+            <li>
+                <h3 class="left top_250 white_bg">Tus momentos más especiales</h3>
+                <p class="left top_300 white_bg" >Aprende a soportar los pequeños obstáculos del día a día y relajaras tu mente. <br> [Loky Handvolt]</p>
+                <button class="left top_375 black">Escribenos</button>
+                <img src="img/slide_03.jpg" alt="Slide de Slippry 3"></li>
+        </ul>
+    </section>
+
+    <!-- Area de Nosotros -->
+
+    <div class="p_100" id="nosotros">
+        
+    </div>
+
+    <!--ends-->
+
+
+
+    <!-- Area de Servicios -->
+
+    <!--ends-->
+
+
+
+    <!-- Footer -->
+
+    <!--ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <!-- Bootstrap 4 JS CDN -> JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+    <script src="js/slippry.min.js"></script>
+
+    <!--Activacion y scripts-->
+    <script>
+    $(document).ready(function(){
+        /* Activando Slippry */
+        $('#slip').slippry({
+            captions: false,
+            pager:false
+        });
+    });
+    </script>
+</body>
+</html>

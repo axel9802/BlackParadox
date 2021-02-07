@@ -1,0 +1,185 @@
+// Definiendo variables a utilizar
+$base: #060a0f
+$sec: #494949
+$outline: #ff6600
+$text: transparentize($sec, .5)
+// Dando forma a elementos a utilizar
+h1,h2,h3,h4,h5,h6
+    color: $base
+p
+    color: $sec   
+.pad_100
+    padding: 100px 0px
+.center
+    text-align: center
+    // Para centrar elementos tipo bloque
+    margin: 0px auto
+input,select,option,textarea
+    width: 100%
+    padding: 10px 15px
+    border: 1px solid $base
+    margin: 5px 0px
+    opacity: .5
+    @extend .tslow
+    &:hover, &:focus    //Focus es cuando está dentro del input, cuando le das click y estas escribiendo
+        opacity: 1
+        color: $base
+textarea
+    max-width: 100%
+    min-width: 100%
+    min-height: 150px
+    max-height: 250px     
+button
+    background-color: transparent
+    text-transform: uppercase
+    border: 1px solid $base
+    padding: 10px 20px
+    margin: 5px 0px
+    color: $base
+    font-size: 16px
+    letter-spacing: 1px
+    cursor: pointer
+    opacity: .7
+    border-radius: 5px
+    &:hover
+        @extend .tslow
+        opacity: 1
+        background-color: $base
+        color: white
+.black
+    background-color: $base
+    opacity: 1
+    color: white
+    &:hover
+        background-color: $outline
+        border: 1px solid $outline
+                    //Empezando por el menu
+a
+    margin: 0px
+    padding: 0px
+    //Llamando la clase .tslow para aplicar la transicion a la clase: a
+    @extend .tslow
+    &:hover
+        color: $outline
+
+//Dandole transicion para hover en una clase llamada .tslow
+.tslow
+    //webkit para chrome
+    -webkit-transition: all .5s ease-in-out
+    //-o- para opera
+    -o-transition: all .5s ease-in-out
+    // sirve en general 
+    transition: all .5s ease-in-out
+
+nav
+    width: 100%
+    //background-color: lighten(red, 40)
+    padding: 10px, 0px
+    position: fixed
+    border-bottom: 1px, solid transparent
+    z-index: 100
+    @extend .tslow
+    &:hover
+        background-color: transparentize(white, .2)
+        padding: 25px 0px
+        border: 1px solid transparentize($base, .8)
+        .logo
+            img
+                width: 80%
+        .menu-derecha
+           li
+               a
+                   color: $text
+
+    .logo
+        img
+            width: 100%
+            @extend .tslow
+    .menu-derecha
+        margin: 0px
+        margin-top: 16px
+        padding: 0px
+        text-align: right
+        @extend .tslow
+        //Definir cuando este activo el link como se va mirar
+        .link-activate
+            a
+                color: $base !important
+                &::after
+                    width: 100%
+                    background-color: $base
+                    @extend .tslow
+
+
+        li
+            display: inline-block
+            padding: 0px 10px
+            a
+                position: relative
+                text-decoration: none
+                font-size: 16px
+                color: transparentize(white, .2)
+                @extend .tslow
+                &:before
+                    content: ""
+                    position: absolute             
+                    width: 100%                   
+                    background-color: transparent
+                    height: 1px
+                    @extend .tslow                    
+                &:after
+                    content: ""
+                    position: absolute
+                    top: 100%
+                    left: 0px
+                    width: 0%
+                    /*background-color: $base
+                    height: 1px
+                    @extend .tslow 
+                &:hover                  
+                    text-decoration: none
+                    color: $base
+                    &::before
+                        width: 0%
+                        background-color: $base
+                    &::after
+                        width: 100%
+                        background-color: $base
+
+                    //Editando el Slider (imagenes)
+#slider
+    //Para que los bordes no se vean cortados como serrucho
+    backface-visibility: hidden
+    //Empieza en la coordenada esquina arriba derecha (x,y) -> Clip path hace recortes a la imagen
+    clip-path: polygon(100% 0%, 100% 100%, 50% 90%, 0% 100%, 0% 0%) 
+
+                    //Editando Slip para poner texto encima de los sliders
+#slip
+    position: relative
+    h1,h2,h3,h4,h5,h6,p,button,a,strong
+        position: absolute
+    p
+        width: 600px
+    .white_bg
+        background-color: transparentize(white, .2)
+        padding: 5px 10px
+    .left
+        left: 200px
+    .right
+        right: 200px
+    .top_250
+        top: 250px
+    .top_300
+        top: 300px
+    .top_375
+        top: 375px
+    .top_400
+        top: 400px
+    .top_450
+        top: 450px
+
+
+
+
+
+

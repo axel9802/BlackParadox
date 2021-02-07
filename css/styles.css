@@ -1,0 +1,221 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #060a0f;
+}
+
+p {
+  color: #494949;
+}
+
+.pad_100 {
+  padding: 100px 0px;
+}
+
+.center {
+  text-align: center;
+  margin: 0px auto;
+}
+
+input, select, option, textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #060a0f;
+  margin: 5px 0px;
+  opacity: .5;
+}
+
+input:hover, input:focus, select:hover, select:focus, option:hover, option:focus, textarea:hover, textarea:focus {
+  opacity: 1;
+  color: #060a0f;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+  max-height: 250px;
+}
+
+button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #060a0f;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  color: #060a0f;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  opacity: .7;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 1;
+  background-color: #060a0f;
+  color: white;
+}
+
+.black {
+  background-color: #060a0f;
+  opacity: 1;
+  color: white;
+}
+
+.black:hover {
+  background-color: #ff6600;
+  border: 1px solid #ff6600;
+}
+
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+.tslow, input, select, option, textarea, button:hover, a, nav, nav .logo img, nav .menu-derecha, nav .menu-derecha .link-activate a::after, nav .menu-derecha li a, nav .menu-derecha li a:before, nav .menu-derecha li a:after {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+nav {
+  width: 100%;
+  padding: 10px, 0px;
+  position: fixed;
+  border-bottom: 1px, solid transparent;
+  z-index: 100;
+}
+
+nav:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px 0px;
+  border: 1px solid rgba(6, 10, 15, 0.2);
+}
+
+nav:hover .logo img {
+  width: 80%;
+}
+
+nav:hover .menu-derecha li a {
+  color: rgba(73, 73, 73, 0.5);
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .menu-derecha {
+  margin: 0px;
+  margin-top: 16px;
+  padding: 0px;
+  text-align: right;
+}
+
+nav .menu-derecha .link-activate a {
+  color: #060a0f !important;
+}
+
+nav .menu-derecha .link-activate a::after {
+  width: 100%;
+  background-color: #060a0f;
+}
+
+nav .menu-derecha li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+nav .menu-derecha li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+nav .menu-derecha li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  height: 1px;
+}
+
+nav .menu-derecha li a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 0%;
+  /*background-color: $base */
+  height: 1px;
+}
+
+nav .menu-derecha li a:hover {
+  text-decoration: none;
+  color: #060a0f;
+}
+
+nav .menu-derecha li a:hover::before {
+  width: 0%;
+  background-color: #060a0f;
+}
+
+nav .menu-derecha li a:hover::after {
+  width: 100%;
+  background-color: #060a0f;
+}
+
+#slider {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 90%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 50% 90%, 0% 100%, 0% 0%);
+}
+
+#slip {
+  position: relative;
+}
+
+#slip h1, #slip h2, #slip h3, #slip h4, #slip h5, #slip h6, #slip p, #slip button, #slip a, #slip strong {
+  position: absolute;
+}
+
+#slip p {
+  width: 600px;
+}
+
+#slip .white_bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+}
+
+#slip .left {
+  left: 200px;
+}
+
+#slip .right {
+  right: 200px;
+}
+
+#slip .top_250 {
+  top: 250px;
+}
+
+#slip .top_300 {
+  top: 300px;
+}
+
+#slip .top_375 {
+  top: 375px;
+}
+
+#slip .top_400 {
+  top: 400px;
+}
+
+#slip .top_450 {
+  top: 450px;
+}
+/*# sourceMappingURL=styles.css.map */
